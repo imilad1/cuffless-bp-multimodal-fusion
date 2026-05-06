@@ -1,0 +1,40 @@
+{
+  "created_at": "2026-05-06T01:36:25",
+  "validation_samples": 132,
+  "device": "mps",
+  "checkpoint_path": "/Users/miladelaydi/Documents/University/Final Year Project/blood-pressure-estimation/models/checkpoints/best_ecg_baseline.pth",
+  "model_import_path": "models.ecg_branch.ECGBaselineModel",
+  "validation_data_source": "cache",
+  "validation_cache_path": "/Users/miladelaydi/Documents/University/Final Year Project/blood-pressure-estimation/results/cache/val_split.npz",
+  "metrics": [
+    {
+      "channel": "Systolic",
+      "mae": 113.19947052001953,
+      "rmse": 114.48701477050781,
+      "sde": 17.187042236328125,
+      "pearson_r": -0.08129857972151408,
+      "mean_bias": -113.19947052001953,
+      "loa_upper": -79.5128677368164,
+      "loa_lower": -146.88607330322264
+    },
+    {
+      "channel": "Diastolic",
+      "mae": 65.74779510498047,
+      "rmse": 66.95207214355469,
+      "sde": 12.689671516418457,
+      "pearson_r": -0.048591106984756896,
+      "mean_bias": -65.74779510498047,
+      "loa_upper": -40.8760389328003,
+      "loa_lower": -90.61955127716064
+    }
+  ],
+  "units": {
+    "mae": "mmHg",
+    "rmse": "mmHg",
+    "sde": "mmHg",
+    "mean_bias": "mmHg",
+    "loa_upper": "mmHg",
+    "loa_lower": "mmHg",
+    "pearson_r": "unitless"
+  }
+}

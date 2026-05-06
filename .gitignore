@@ -1,0 +1,60 @@
+# Project deliberate exclusions per repo policy
+
+# Thesis writing artefacts (kept locally, never published)
+report/
+
+# Standalone diagnostic scanner not used by train.py or evaluate.py
+src/debug_alignment.py
+
+
+# Raw and intermediate data, available from the original Dryad dataset:
+# https://doi.org/10.5061/dryad.qjq2bvqpk
+# Not redistributed in this repository for size and ethical reasons.
+
+data/raw/Per_Participant_Sensor_Data.zip
+data/raw/Output_ECG_Segmentor_data.zip
+data/raw/extracted_segments/
+data/raw/extracted_sensor_data/
+data/raw/Blood_Pressure_Sleep_Info.xlsx
+data/raw/Data_Collection_Notes.csv
+data/raw/Participant_Information.csv
+data/processed/
+data/external/
+models/final/
+
+
+# Operational artefacts (logs, temporary cache outside results/cache)
+
+results/evaluate_run.log
+*.log
+
+
+# Python, Jupyter, packaging
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.ipynb_checkpoints/
+
+
+# Virtual environments and secrets
+
+.venv/
+venv/
+env/
+.env
+.env.*
+
+
+# Editor, IDE, OS
+
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
