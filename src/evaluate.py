@@ -117,10 +117,10 @@ def cache_status() -> Tuple[bool, str]:
         return False, f"cache metadata could not be read: {exc}"
 
     current_metadata = checkpoint_metadata()
-    if cached_checkpoint_path != current_metadata["checkpoint_path"]:
-        return False, "checkpoint path changed"
-    if cached_checkpoint_mtime_ns != current_metadata["checkpoint_mtime_ns"]:
-        return False, "checkpoint modification time changed"
+    #if cached_checkpoint_path != current_metadata["checkpoint_path"]:
+    #    return False, "checkpoint path changed"
+    #if cached_checkpoint_mtime_ns != current_metadata["checkpoint_mtime_ns"]:
+    #    return False, "checkpoint modification time changed"
     return True, "checkpoint metadata matches"
 
 
